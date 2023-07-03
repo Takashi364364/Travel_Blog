@@ -1,0 +1,12 @@
+@import '../Mixin/flexJustify';
+@import '../Mixin/responsive';
+
+.l-footer {
+  @include flexJustify(space-between);
+  max-width: 1200px;
+  padding: 50px 16px;
+  margin: 60px auto 0px auto;
+  @include responsive {//レスポンシブ
+    flex-direction: column;
+  }
+}

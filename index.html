@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Travel Blog</title>
+</head>
+<body>
+  <header>
+    <div class="l-header">
+      <h1>
+        <a href="#">
+          <img class="c-header__image" src="public/images/title.jpg" alt="">
+        </a>
+      </h1>
+      <nav>
+        <ul class="c-nav">
+          <li class="c-nav__category">
+            <a class="c-nav__category--color" href="#">NEW</a>
+          </li>
+          <li class="c-nav__category">
+            <a class="c-nav__category--color" href="#">SERIES</a>
+          </li>
+          <li class="c-nav__category">
+            <a class="c-nav__category--color" href="#">Q&A</a>
+          </li>
+          <li class="c-nav__category">
+            <a class="c-nav__category--color" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="p-pickup" id="modal">
+    <article class="c-pickup">
+      <img class="c-pickup__image" src="public/images/itukusima.jpg" alt="">
+      <h2 class="c-pickup__title">厳島</h2>
+      <div class="c-pickup__readmore">
+        <a class="c-pickup__readmore--style" href="#">READ MORE</a>
+      </div>
+    </article>
+    <article class="c-pickup">
+      <img class="c-pickup__image" src="public/images/kyoto.jpg" alt="">
+      <h2 class="c-pickup__title">京都</h2>
+      <div class="c-pickup__readmore">
+        <a class="c-pickup__readmore--style" href="#">READ MORE</a>
+      </div>
+    </article>
+    <article class="c-pickup">
+      <img class="c-pickup__image" src="public/images/nara.jpg" alt="">
+      <h2 class="c-pickup__title">奈良</h2>
+      <div class="c-pickup__readmore">
+        <a class="c-pickup__readmore--style" href="#">READ MORE</a>
+      </div>
+    </article>
+  </div>
+  <div id="c-graydisplay"></div>
+  <div class="l-container">
+    <main class="l-main">
+      <article>
+        <h2 class="c-main__title">
+          <a href="#">タイトルテキスト</a>
+        </h2>
+        <ul class="c-main__meta">
+          <li>
+            <a href="#">2023/05/06</a>
+          </li>
+          <li class="c-main__meta--category">
+            <a href="#">カテゴリ1</a>
+          </li>
+        </ul>
+        <a href="#">
+          <img class="c-main__image" src="public/images/arasiyama.jpg" alt="">
+        </a>
+        <p class="c-main__text">本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <div class="c-main__readmore">
+          <a class="c-main__readmore--style" href="#">READ MORE</a>
+        </div>
+      </article>
+      <article>
+        <h2 class="c-main__title">
+          <a href="#">タイトルテキスト</a>
+        </h2>
+        <ul class="c-main__meta">
+          <li>
+            <a href="#">2023/05/06</a>
+          </li>
+          <li class="c-main__meta--category">
+            <a href="#">カテゴリ1</a>
+          </li>
+        </ul>
+        <a href="#">
+          <img class="c-main__image" src="public/images/fusimiinari.jpg" alt="">
+        </a>
+        <p class="c-main__text">本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <div class="c-main__readmore">
+          <a class="c-main__readmore--style" href="#">READ MORE</a>
+        </div>
+      </article>
+      <article>
+        <h2 class="c-main__title">
+          <a href="#">タイトルテキスト</a>
+        </h2>
+        <ul class="c-main__meta">
+          <li>
+            <a href="#">2023/05/06</a>
+          </li>
+          <li class="c-main__meta--category">
+            <a href="#">カテゴリ1</a>
+          </li>
+        </ul>
+        <a href="#">
+          <img class="c-main__image" src="public/images/kyoto2.jpg" alt="">
+        </a>
+        <p class="c-main__text">本文テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <div class="c-main__readmore">
+          <a class="c-main__readmore--style" href="#">READ MORE</a>
+        </div>
+      </article>
+    </main>
+    <aside class="l-sidebar">
+      <section class="c-sidebar__author">
+        <img class="c-sidebar__author--image" src="public/images/profile.jpg" alt="">
+        <h3 class="c-sidebar__author--name">Name name</h3>
+        <div class="c-sidebar__author--profile">
+          <p>
+            プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+      </section>
+      <section class="c-sidebar__ranking">
+        <h3>Ranking</h3>
+        <article>
+          <a href="#">
+            <img class="c-sidebar__ranking--image" src="public/images/osaka1.jpg" alt="">
+            <h4 class="c-sidebar__ranking--title">
+              タイトルテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </h4>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img class="c-sidebar__ranking--image" src="public/images/osaka2.jpg" alt="">
+            <h4 class="c-sidebar__ranking--title">
+              タイトルテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </h4>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img class="c-sidebar__ranking--image" src="public/images/osaka3.jpg" alt="">
+            <h4 class="c-sidebar__ranking--title">
+              タイトルテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </h4>
+          </a>
+        </article>
+      </section>
+      <section class="c-sidebar__archive">
+        <h3>Archive</h3>
+        <ul class="c-sidebar__archive--ul">
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+          <li class="c-sidebar__archive--li">
+            <a href="#">XXXX年XX月 (XX)</a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <footer>
+    <div class="l-footer">
+      <section class="c-footer">
+        <h3>About</h3>
+        <p class="c-footer__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        <ul class="c-footer__item">
+          <li class="c-footer__item--allow">
+            <a href="#">プロフィール詳細</a>
+          </li>
+          <li class="c-footer__item--allow">
+            <a href="#">お仕事の依頼</a>
+          </li>
+          <li class="c-footer__item--allow">
+            <a href="#">お問い合わせ</a>
+          </li>
+        </ul>
+      </section>
+      <section class="c-footer">
+        <h3>Menu</h3>
+        <ul class="c-footer__menu">
+          <li class="c-footer__menu--content">
+            <a href="#">NEW</a>
+          </li>
+          <li class="c-footer__menu--content">
+            <a href="#">SERIES</a>
+          </li>
+          <li class="c-footer__menu--content">
+            <a href="#">Q&A</a>
+          </li>
+          <li class="c-footer__menu--content">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </section>
+      <section class="c-footer">
+        <h3>Twitter</h3>
+        <div class="c-footer__twitter">
+          <a class="twitter-timeline" data-lang="ja" data-width="300" data-height="300" data-theme="light" href="https://twitter.com/TwitterJP?ref_src=twsrc%5Etfw">Tweets by TwitterJP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </section>
+    </div>
+    <p class="c-footer__copyright">© Travel & Blog</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

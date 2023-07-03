@@ -1,0 +1,39 @@
+@import '../../Mixin/flexJustify';
+@import '../../Mixin/underBar';
+
+.c-main {
+  &__title {
+    font-weight: normal;
+    margin-top: 80px;
+  }
+  &__meta {
+    @include flexJustify(flex-start);
+    margin-top: 10px;
+    &--category {
+      margin-left: 10px;
+    }
+  }
+  &__image {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px #333;
+  }
+  &__text {
+    padding: 20px 40px 30px 40px;
+  }
+  &__readmore {
+    text-align: center;
+    &--style {
+      position: relative;
+      padding-bottom: 5px;
+      &::after {
+        @include underBar;
+      }
+      &:hover::after {
+        opacity: 0;
+        transform: translateY(3px);
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@import '../Mixin/responsive';
+
+.l-main {
+  width: 65%;
+  @include responsive {//レスポンシブ
+    width: 100%;
+  }
+}

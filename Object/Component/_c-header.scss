@@ -1,0 +1,11 @@
+.c-header {
+  &__image {
+    max-width: 100%;
+  }
+  &__title {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    color: #c4b6b6;
+  }
+}

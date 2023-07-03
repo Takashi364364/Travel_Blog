@@ -1,0 +1,52 @@
+.c-sidebar {
+  //Author
+  &__author {
+    margin-top: 60px;
+    text-align: center;
+    &--image {
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      max-width: 100%;
+    }
+    &--name {
+      margin-top: 30px;
+    }
+    &--profile {
+      margin-top: 30px;
+      text-align: left;
+    }
+  }
+
+  //Ranking
+  &__ranking {
+    margin-top: 60px;
+    text-align: center;
+    &--image {
+      max-width: 100%;
+      margin-top: 30px;
+      box-shadow: 0px 4px 12px #333;
+      border-radius: 5px;
+    }
+    &--title {
+      margin-top: 20px;
+      font-weight: normal;
+      text-align: left;
+    }
+  }
+
+  //Archive
+  &__archive {
+    text-align: center;
+    margin-top: 60px;
+    border-bottom: solid 1px #777;
+    &--ul {
+      margin-top: 30px;
+    }
+    &--li {
+      padding: 20px;
+      text-align: left;
+      border-top: solid 1px #777;
+    }
+  }
+}

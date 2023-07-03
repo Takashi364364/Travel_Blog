@@ -1,0 +1,18 @@
+@import '../../Mixin/flexJustify';
+@import '../../Mixin/responsive';
+
+.c-nav {
+  @include flexJustify(flex-start);
+  height: 50px;
+  background-color: #333;
+  align-items: center;
+  &__category {
+    margin-left: 70px;
+    @include responsive {//レスポンシブ
+      margin-left: 30px;
+    }
+    &--color {
+      color: #fff;
+    }
+  }
+}

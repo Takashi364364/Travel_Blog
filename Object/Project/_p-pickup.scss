@@ -1,0 +1,14 @@
+@import '../../Mixin/flexJustify';
+@import '../../Mixin/responsive';
+
+.p-pickup {
+  @include flexJustify(space-between);
+  max-width: 1200px;
+  padding: 100px 16px 16px;
+  margin: 0 auto;
+  @include responsive {//レスポンシブ
+    align-items: center;
+    width: auto;
+    flex-direction: column;
+  }
+}

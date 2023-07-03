@@ -1,0 +1,10 @@
+@import '../Mixin/responsive';
+
+.l-sidebar {
+  width: 33%;
+  padding: 20px;
+  @include responsive {//レスポンシブ
+    width: 100%;
+    padding: 0;
+  }
+}

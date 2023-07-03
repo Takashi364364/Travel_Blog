@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  &:hover {
+    color: #848282;
+  }
+}
+img {
+  vertical-align: top;
+}
+
+footer {
+  background-color: #f7f7f7;
+}

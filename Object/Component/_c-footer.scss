@@ -1,0 +1,53 @@
+@import '../../Mixin/responsive';
+
+.c-footer {
+  width: 30%;
+  @include responsive {//レスポンシブ
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  //About
+  &__text {
+    margin-top: 30px;
+  }
+  &__item {
+    margin-top: 20px;
+    &--allow {
+      position: relative;
+      padding-left: 12px;
+      &::before {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-width: 6px 0 6px 8px;
+        border-color: transparent transparent transparent #333;
+        top: 50%;
+        left: 0;
+        margin-top: -6px;
+      }
+    }
+  }
+
+  //Menu
+  &__menu {
+    margin-top: 30px;
+    border-bottom: solid 1px #777;
+    &--content {
+      border-top: solid 1px #777;
+      padding: 15px;
+      text-align: left;
+    }
+  }
+
+  //Twitter
+  &__twitter {
+    margin-top: 30px;
+  }
+
+  //Copyright
+  &__copyright {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
